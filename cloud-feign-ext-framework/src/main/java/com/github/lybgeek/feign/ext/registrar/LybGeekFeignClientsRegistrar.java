@@ -125,7 +125,7 @@ public class LybGeekFeignClientsRegistrar implements ImportBeanDefinitionRegistr
     private void registerDefaultConfiguration(AnnotationMetadata metadata,
                                               BeanDefinitionRegistry registry) {
         Map<String, Object> defaultAttrs = metadata
-                .getAnnotationAttributes(EnableFeignClients.class.getName(), true);
+                .getAnnotationAttributes(EnableLybGeekFeignClients.class.getName(), true);
 
         if (defaultAttrs != null && defaultAttrs.containsKey("defaultConfiguration")) {
             String name;
@@ -148,7 +148,7 @@ public class LybGeekFeignClientsRegistrar implements ImportBeanDefinitionRegistr
         Set<String> basePackages;
 
         Map<String, Object> attrs = metadata
-                .getAnnotationAttributes(EnableFeignClients.class.getName());
+                .getAnnotationAttributes(EnableLybGeekFeignClients.class.getName());
         AnnotationTypeFilter annotationTypeFilter = new AnnotationTypeFilter(
                 FeignClient.class);
         final Class<?>[] clients = attrs == null ? null
