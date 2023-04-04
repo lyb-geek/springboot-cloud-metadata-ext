@@ -29,11 +29,18 @@ management:
     health:
       show-details: always
 
+logging:
+  level:
+    # feign调用所在的包
+    com.github.lybgeek.api.feign: debug
+
+
 feign:
   client:
     config:
       default:
+        # 开启feign记录请求和响应的标题、正文和元数据
+        loggerLevel: FULL
         connect-timeout: 5000
         read-timeout: 20000
-lybgeek:
-  gateWayUrl: localhost:8000
+
