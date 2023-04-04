@@ -43,4 +43,5 @@ feign:
         loggerLevel: FULL
         connect-timeout: 5000
         read-timeout: 20000
-
+lybgeek:
+  gateWayUrl: localhost:8000
