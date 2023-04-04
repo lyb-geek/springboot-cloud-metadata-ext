@@ -1,13 +1,13 @@
 package com.github.lybgeek.comsumer;
 
 
+import com.github.lybgeek.feign.ext.annotation.EnableLybGeekFeignClients;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 
 @SpringBootApplication
-@EnableFeignClients(basePackages = "com.github.lybgeek")
+@EnableLybGeekFeignClients(basePackages = "com.github.lybgeek")
 public class ConsumerApplication {
 
 

@@ -16,6 +16,7 @@
         <module>common</module>
         <module>comsumer-service</module>
         <module>cloud-metadata-ext-framework</module>
+        <module>cloud-feign-ext-framework</module>
     </modules>
 
     <parent>

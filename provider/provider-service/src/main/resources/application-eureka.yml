@@ -7,8 +7,8 @@ eureka:
     lease-expiration-duration-in-seconds: 10 #续约到期时间（默认90秒）
     hostname: ${HOSTNAME:${spring.application.name}}
     ext:
+      group: lybgeek6613
       namespace: dev
-      group: lybgeek
   client:
     service-url:
       defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://localhost:8761/eureka/}

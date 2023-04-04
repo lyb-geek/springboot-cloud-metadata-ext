@@ -1,0 +1,11 @@
+{
+  "groups": [],
+  "properties": [
+    {
+      "name": "lybgeek.gateWayUrl",
+      "type": "java.lang.String",
+      "sourceType": ""
+    }
+  ],
+  "hints": []
+}
